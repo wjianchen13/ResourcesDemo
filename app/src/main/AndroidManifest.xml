@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".ninepatch.NinePatchActivity" />
         <activity android:name=".ninepatch.NinePatchActivity1" />
+        <activity android:name=".drawable.GetDrawableActivity" />
 
     </application>
 

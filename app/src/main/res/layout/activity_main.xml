@@ -29,4 +29,11 @@
         android:text="加载.9图片缓存"
         android:onClick="onTest2"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="获取资源图片"
+        android:onClick="onTest3"/>
+
 </LinearLayout>
