@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ninepatch.NinePatchActivity" />
+        <activity android:name=".ninepatch.NinePatchActivity1" />
 
     </application>
 

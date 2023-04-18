@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.resourcesdemo.ninepatch.NinePatchActivity;
+import com.example.resourcesdemo.ninepatch.NinePatchActivity1;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,5 +23,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onTest1(View v) {
         startActivity(new Intent(this, NinePatchActivity.class));
+    }
+
+    /**
+     * 加载.9图片缓存
+     * @param v
+     */
+    public void onTest2(View v) {
+        startActivity(new Intent(this, NinePatchActivity1.class));
     }
 }

@@ -115,21 +115,17 @@ public class NinePatchActivity extends AppCompatActivity {
             public void run() {
 
                 try {
-//                    File file = new File(getFilesDir(),fileName);
-//                    if (file.exists()) {
-                        final NinePatchDrawable drawable =
-                                NinePatchChunk1.create9PatchDrawable(
-                                        NinePatchActivity.this,
-                                        BitmapFactory.decodeFile(aaptPath),
-                                        null);
-                        new Handler(NinePatchActivity.this.getMainLooper()).post(new Runnable() {
-                            @Override
-                            public void run() {
-                                tvTest6.setBackground(drawable);
-                            }
-                        });
-
-//                    }
+                    final NinePatchDrawable drawable =
+                            NinePatchChunk1.create9PatchDrawable(
+                                    NinePatchActivity.this,
+                                    BitmapFactory.decodeFile(aaptPath),
+                                    null);
+                    new Handler(NinePatchActivity.this.getMainLooper()).post(new Runnable() {
+                        @Override
+                        public void run() {
+                            tvTest6.setBackground(drawable);
+                        }
+                    });
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -185,10 +181,7 @@ public class NinePatchActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-
                 try {
-//                    File file = new File(getFilesDir(),fileName);
-//                    if (file.exists()) {
                     final NinePatchDrawable drawable =
                             NinePatchChunk1.create9PatchDrawable(
                                     NinePatchActivity.this,
@@ -200,8 +193,6 @@ public class NinePatchActivity extends AppCompatActivity {
                             tvTest12.setBackground(drawable);
                         }
                     });
-
-//                    }
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
