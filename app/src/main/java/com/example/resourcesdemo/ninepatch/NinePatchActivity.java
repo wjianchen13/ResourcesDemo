@@ -59,8 +59,8 @@ public class NinePatchActivity extends AppCompatActivity {
         tvTest8 = findViewById(R.id.tv_test8);
         tvTest10 = findViewById(R.id.tv_test10);
         tvTest12 = findViewById(R.id.tv_test12);
-        aaptFileName = "ic_test1.9.png";
-        originFileName = "ic_chat_origin.9.png";
+        aaptFileName = "vip_chat_2.9.png"; // 网络下载的
+        originFileName = "vip_chat_2_o.9.png"; // 原始图片
         aaptPath = getFilesDir().getAbsolutePath() + File.separator + aaptFileName;
         originPath = getFilesDir().getAbsolutePath() + File.separator + originFileName;
     }
