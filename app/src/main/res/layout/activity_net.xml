@@ -56,6 +56,67 @@
             android:text="从之前保存的.9图片读取显示"
             android:onClick="onTest3" />
 
+        <TextView
+            android:id="@+id/tv_test4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="资源相关处理资源相关处理资源相关处理资源相关处理" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="测试资源公用"
+            android:onClick="onTest4" />
+
+        <TextView
+            android:id="@+id/tv_test5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="测试资源公用"
+            android:onClick="onTest5" />
+
+        <TextView
+            android:id="@+id/tv_test6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="测试资源公用"
+            android:onClick="onTest6" />
+
+        <TextView
+            android:id="@+id/tv_test7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="资源相关处理资源相关处理资源相关处理" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="测试资源公用"
+            android:onClick="onTest7" />
+
+
     </LinearLayout>
 
 </ScrollView>

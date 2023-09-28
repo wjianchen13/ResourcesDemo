@@ -39,6 +39,10 @@ public class NetActivity extends AppCompatActivity {
     private TextView tvTest1;
     private TextView tvTest2;
     private TextView tvTest3;
+    private TextView tvTest4;
+    private TextView tvTest5;
+    private TextView tvTest6;
+    private TextView tvTest7;
     private String filePath;
 
     @Override
@@ -49,6 +53,10 @@ public class NetActivity extends AppCompatActivity {
         tvTest1 = findViewById(R.id.tv_test1);
         tvTest2 = findViewById(R.id.tv_test2);
         tvTest3 = findViewById(R.id.tv_test3);
+        tvTest4 = findViewById(R.id.tv_test4);
+        tvTest5 = findViewById(R.id.tv_test5);
+        tvTest6 = findViewById(R.id.tv_test6);
+        tvTest7 = findViewById(R.id.tv_test7);
     }
 
     private String url1 = "https://twww.ayomet.com/public/images/vip/vip_chat.png"; // 原始图片
@@ -230,6 +238,88 @@ public class NetActivity extends AppCompatActivity {
         }
     }
 
+    private Drawable mDrawable;
+
+    /**
+     * 测试资源公用
+     * @param v
+     */
+    public void onTest4(View v) {
+        loadDian9Tu4(this, tvTest4, url2);
+    }
+
+    public void loadDian9Tu4(Context context, View view, String imgUrl) {
+        if (context == null) {
+            return;
+        }
+        if (context instanceof Activity) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                if (((Activity) context).isDestroyed()) {
+                    return;
+                }
+            }
+        }
+        Glide.with(context)
+                .asFile()
+                .load(imgUrl)
+                .into(new CustomTarget<File>() {
+                    @Override
+                    public void onResourceReady(@NonNull File resource, @Nullable Transition<? super File> transition) {
+                        try {
+                            FileInputStream is = new FileInputStream(resource);
+                            setNinePathImage4(context, view, BitmapFactory.decodeStream(is));
+                            is.close();
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                    @Override
+                    public void onLoadCleared(@Nullable Drawable placeholder) {
+
+                    }
+                });
+    }
+
+    public void setNinePathImage4(Context context, View view, Bitmap bitmap) {
+        if (bitmap == null)
+            return;
+        byte[] chunk = bitmap.getNinePatchChunk();
+        if (NinePatch.isNinePatchChunk(chunk)) {
+            mDrawable =
+                    NinePatchChunk1.create9PatchDrawable(
+                            NetActivity.this,
+                            bitmap,
+                            null);
+            view.setBackground(mDrawable);
+        }
+    }
+
+    /**
+     * 测试资源公用
+     * @param v
+     */
+    public void onTest5(View v) {
+        tvTest5.setBackground(mDrawable);
+    }
+
+    /**
+     * 测试资源公用
+     * @param v
+     */
+    public void onTest6(View v) {
+        tvTest6.setBackground(mDrawable);
+    }
+
+    /**
+     * 测试资源公用
+     * @param v
+     */
+    public void onTest7(View v) {
+        tvTest7.setBackground(mDrawable);
+    }
 
 }
 
