@@ -1,4 +1,4 @@
-package com.example.resourcesdemo.ninepatch;
+package com.example.resourcesdemo.utils.ninepatch2;
 
 import android.graphics.Rect;
 
@@ -6,10 +6,11 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
 /**
+ * 这个工具需要使用aapt修改.9图片，然后再用该类进行处理，才可以显示.9图片的效果，处理的流程参考下面链接
  * https://blog.csdn.net/tabactivity/article/details/50513187
  * https://stackoverflow.com/questions/11065996/ninepatchdrawable-does-not-get-padding-from-chunk
  */
-class NinePatchChunk {
+public class NinePatchChunk {
 
     public static final int NO_COLOR = 0x00000001;
     public static final int TRANSPARENT_COLOR = 0x00000000;

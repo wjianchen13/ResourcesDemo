@@ -1,4 +1,4 @@
-package com.example.resourcesdemo.ninepatch.ninepatch;
+package com.example.resourcesdemo.utils.ninepatch;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;

@@ -1,4 +1,4 @@
-package com.example.resourcesdemo.ninepatch.ninepatch;
+package com.example.resourcesdemo.utils.ninepatch;
 
 /**
  * Created by Anatolii on 8/28/13.

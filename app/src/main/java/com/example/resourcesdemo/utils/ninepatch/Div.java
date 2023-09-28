@@ -1,4 +1,4 @@
-package com.example.resourcesdemo.ninepatch.ninepatch;
+package com.example.resourcesdemo.utils.ninepatch;
 
 import java.io.Externalizable;
 import java.io.IOException;

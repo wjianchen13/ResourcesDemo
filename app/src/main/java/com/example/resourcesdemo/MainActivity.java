@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.resourcesdemo.drawable.GetDrawableActivity;
+import com.example.resourcesdemo.net.NetActivity;
 import com.example.resourcesdemo.ninepatch.NinePatchActivity;
 import com.example.resourcesdemo.ninepatch.NinePatchActivity1;
 
@@ -41,5 +42,14 @@ public class MainActivity extends AppCompatActivity {
     public void onTest3(View v) {
         startActivity(new Intent(this, GetDrawableActivity.class));
     }
+
+    /**
+     * 网络加载
+     * @param v
+     */
+    public void onTest4(View v) {
+        startActivity(new Intent(this, NetActivity.class));
+    }
+
 
 }

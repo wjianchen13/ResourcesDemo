@@ -1,4 +1,4 @@
-package com.example.resourcesdemo.ninepatch.ninepatch;
+package com.example.resourcesdemo.utils.ninepatch;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -20,6 +20,8 @@ import java.util.Arrays;
 
 /**
  * Created by Anatolii on 8/27/13.
+ * 使用的是这个框架，不需要终端处理.9图片，直接通过工具生成，但是好像生成的.9图片和原本的.9图片有差别，比如说拉升区域和显示内容区域不一致
+ * https://github.com/Anatolii/NinePatchChunk
  */
 public class NinePatchChunk1 implements Externalizable {
 

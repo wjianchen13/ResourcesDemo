@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.NinePatchDrawable;
 
-import com.example.resourcesdemo.ninepatch.ninepatch.NinePatchChunk1;
+import com.example.resourcesdemo.utils.ninepatch.NinePatchChunk1;
 
 import java.io.File;
 import java.util.HashMap;

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tv_test1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="资源相关处理资源相关处理资源相关处理资源相关处理" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="网络加载资源，图片没有经过处理"
+            android:onClick="onTest1" />
+
+        <TextView
+            android:id="@+id/tv_test2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="资源相关处理资源相关处理资源相关处理资源相关处理" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="网络加载资源，图片经过aapt处理"
+            android:onClick="onTest2" />
+
+        <TextView
+            android:id="@+id/tv_test3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理资源相关处理" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="从之前保存的.9图片读取显示"
+            android:onClick="onTest3" />
+
+    </LinearLayout>
+
+</ScrollView>

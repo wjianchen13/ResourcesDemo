@@ -14,7 +14,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.resourcesdemo.R;
-import com.example.resourcesdemo.ninepatch.ninepatch.NinePatchChunk1;
+import com.example.resourcesdemo.utils.ninepatch.NinePatchChunk1;
+import com.example.resourcesdemo.utils.ninepatch2.NinePatchChunk;
 
 import java.io.File;
 
@@ -199,7 +200,6 @@ public class NinePatchActivity extends AppCompatActivity {
             }
         }).start();
     }
-
 
 }
 
