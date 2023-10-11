@@ -8,6 +8,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.NinePatchDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
 
@@ -87,12 +88,27 @@ public class NinePatchActivity extends AppCompatActivity {
     }
 
     /**
-     *
+     * aapt 读取本地.9图片，解析处理
      * @param v
      */
     public void onTest2(View v) {
         try {
-            Bitmap bitmap = BitmapFactory.decodeFile(aaptPath);
+            // 获取设备的屏幕密度
+            float density = getResources().getDisplayMetrics().density;
+
+            // 根据屏幕密度计算缩放比例
+            int targetDensity = (int) (density * DisplayMetrics.DENSITY_DEFAULT);
+
+            // 创建选项对象来设置缩放比例
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inDensity = DisplayMetrics.DENSITY_XHIGH;
+//            options.inTargetDensity = targetDensity;
+
+            // 加载图片并应用缩放
+//            Bitmap bitmap = BitmapFactory.decodeFile(imagePath, options);
+
+
+            Bitmap bitmap = BitmapFactory.decodeFile(aaptPath, options);
             byte[] chunk = bitmap.getNinePatchChunk();
             if (NinePatch.isNinePatchChunk(chunk)) {
                 NinePatchDrawable drawable = new NinePatchDrawable(getResources(), bitmap, chunk, NinePatchChunk.deserialize(chunk).mPaddings, null);

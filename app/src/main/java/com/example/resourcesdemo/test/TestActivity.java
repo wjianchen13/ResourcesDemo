@@ -1,4 +1,4 @@
-package com.example.resourcesdemo.net;
+package com.example.resourcesdemo.test;
 
 import android.app.Activity;
 import android.content.Context;
@@ -35,7 +35,7 @@ import java.nio.channels.FileChannel;
  * 本地加载.9图片
  * /data/data/0/com.example.resourcesdemo/files/
  */
-public class NetActivity extends AppCompatActivity {
+public class TestActivity extends AppCompatActivity {
 
     private TextView tvTest1;
     private TextView tvTest2;
@@ -49,7 +49,7 @@ public class NetActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_net);
+        setContentView(R.layout.activity_test);
         filePath = getFilesDir().getPath(); // /data/user/0/com.example.resourcesdemo/files
         tvTest1 = findViewById(R.id.tv_test1);
         tvTest2 = findViewById(R.id.tv_test2);
@@ -116,7 +116,7 @@ public class NetActivity extends AppCompatActivity {
 //        if (NinePatch.isNinePatchChunk(chunk)) {
             final NinePatchDrawable patchy =
                     NinePatchChunk1.create9PatchDrawable(
-                            NetActivity.this,
+                            TestActivity.this,
                             bitmap,
                             null);
                 view.setBackground(patchy);
@@ -297,7 +297,7 @@ public class NetActivity extends AppCompatActivity {
         if (NinePatch.isNinePatchChunk(chunk)) {
             mDrawable =
                     NinePatchChunk1.create9PatchDrawable(
-                            NetActivity.this,
+                            TestActivity.this,
                             bitmap,
                             null);
             view.setBackground(mDrawable);

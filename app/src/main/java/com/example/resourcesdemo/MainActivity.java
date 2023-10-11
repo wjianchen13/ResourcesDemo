@@ -10,6 +10,7 @@ import com.example.resourcesdemo.drawable.GetDrawableActivity;
 import com.example.resourcesdemo.net.NetActivity;
 import com.example.resourcesdemo.ninepatch.NinePatchActivity;
 import com.example.resourcesdemo.ninepatch.NinePatchActivity1;
+import com.example.resourcesdemo.test.TestActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onTest4(View v) {
         startActivity(new Intent(this, NetActivity.class));
+    }
+
+    /**
+     * 测试
+     * @param v
+     */
+    public void onTest5(View v) {
+        startActivity(new Intent(this, TestActivity.class));
     }
 
 
