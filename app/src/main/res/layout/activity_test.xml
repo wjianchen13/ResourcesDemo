@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:background="@drawable/ic_test7"
+            android:background="@drawable/ic_test_svip7_2"
             android:text="资源相关处理资源相关处理资源相关处理资源相关处理" />
 
         <Button
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:background="@drawable/ic_test6"
+            android:background="@drawable/ic_test1"
             android:text="资源相关处理资源相关处理资源相关处理资源相关处理" />
 
         <Button
