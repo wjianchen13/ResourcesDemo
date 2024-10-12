@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:background="@drawable/ic_test1"
+            android:background="@drawable/ic_test_svip3_ar_1"
             android:gravity="center"
             android:text="资源相关处理资源相关处理资源相关处理资源相关处理" />
 
